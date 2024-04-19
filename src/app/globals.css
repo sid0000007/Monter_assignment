@@ -2,32 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* utility classes */
+
+.second{
+  background-color: #f5b7b1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.primary{
+  background-color: #fadbd8;
+}
+
+body{
+  background-color: #fadbd8;
+}
+
+.Hero{
+  height: 90vh;
+} 
+
+
+.table-container {
+  display: flex;
+  justify-content: center;
+}
+
+.columns{
+  width:100% !important;
+  background-color: #f5b7b1;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0px;
+}
+.report-table th, .report-table td {
+  padding: 8px 40px;  
+}
+
+.report-table th {
+  text-align:left;
+}
+
+.download{
+  text-align:center !important;
+}
+
+.report-table td {
+  text-align:left;
+}
+
+.report-table td:last-child {
+  text-align: center;
+}
+
+
+.table-container{
+  height: 75vh;
+}
+
+
+.active{
+
+  .page-link{
+   background-color:#f5b7b1;
+   
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.file:hover{
+  background-color: #f5b7b1;
+  border-radius: 10px 15px 10px 10px;
 }
